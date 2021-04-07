@@ -198,15 +198,14 @@ iframe{
     }
     .home{
         display: flex;
-        align-items:center;
-        text-align: center;
+        align-items: center;
         justify-content: center;
         background-color: none;
     }
     .textos{
         display: block;
         position: absolute;
-        margin-top: 15vh;
+        margin-top: 14vh;
         color: #e1e1e5; /*cor original #e1e1e5*/
         top: 2vh;
         height: auto;
@@ -226,7 +225,6 @@ iframe{
         font-size: 2.6vh;
         line-height: 1.35;
         margin-top: -19px;
-        text-align: center;
         font-family: 'PoppinsSemiBold';
     }
     .texto3{
@@ -235,9 +233,6 @@ iframe{
         font-size: 2.6vh;
         line-height: 1.35;
         margin-top: -19px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
         font-family: 'PoppinsSemiBold';
     }
     .button{
