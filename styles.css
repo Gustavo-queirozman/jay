@@ -1,0 +1,427 @@
+/*VERSÃO PC*/
+@font-face {
+    font-family: 'PoppinsLight';
+    src: url('PoppinsLight.otf');
+}
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url('PoppinsRegular.otf');
+}
+@font-face {
+    font-family: 'PoppinsSemiBold';
+    src: url('PoppinsSemiBold.otf');
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    overflow-x: hidden;
+}
+.header{
+    position: absolute;
+    width: 100vw;
+    height: 5.5vw;
+    border: 0px solid  none;
+    background-color: none;
+    font-family: 'PoppinsLight';
+    margin-top: 5vh;
+}
+.logo{
+    float: left;
+    color: #e1e1e5;
+    font-size: 22px;
+    line-height: 80px;
+    padding: 0 6px;
+    margin-left: 2%;
+}
+.menu{
+    float: right;
+    line-height: 45px;
+    margin: 0px;
+    margin-right: 4%;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #e1e1e5;
+    font-weight: lighter;
+    padding: 0 7px;
+}
+.menu ul li a.active{
+    color: #ff7625;
+}
+.menu ul li a:hover{
+    color: #ff7625;
+}
+.home img{
+    display: flex;
+    position: static;
+    width: 100%;
+}
+.textos{
+    display: block;
+    float: left;
+    position: absolute;
+    margin-left: 3vw;
+    color: #e1e1e5;
+    width: max-content;
+    top: 35vh;
+    height: auto;
+    background-color: none;
+}
+.texto1{
+    display: flex;
+    color: #ff7625;
+    font-size: 16px;
+    font-family: 'PoppinsRegular';
+}
+.texto2, .texto3{
+    display: flex;
+    color: #e1e1e5;
+    font-size: 28px;
+    line-height: 1.35;
+    margin-top: -5px;
+    font-family: 'PoppinsSemiBold';
+}
+#texto2{
+    display: flex;
+    margin-top: 4vh;
+}
+.botao{
+    display: flex;
+    color: #ff7625;
+    padding: 8px;
+    top: 10px;
+    font-size: 15px;
+    font-family: 'PoppinsRegular';
+    letter-spacing: 2px;
+    border: 2px solid #ff7625;
+}
+a{
+    display: flex;
+    text-decoration: none;
+}
+.portfolio video{
+    display: flex;
+    width: 100%;
+    margin-top: -0.2vh;
+    opacity: 10%;
+}
+.container{
+    display: grid;
+    margin-top: -650px;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: stretch;
+    grid-row-gap: 60px;
+    justify-items: center;
+    background-color: none;
+}
+iframe{
+    display: flex;
+    position: relative;
+    display: flex;
+    border: 1.5px solid black;
+}
+.whatsapp{
+    position: fixed;
+    top: 85%;
+    right: 3%;
+    padding: 10px;
+    z-index: 10000000;
+}
+.whatsapp img{
+    height: 60px;
+    width: 60px;
+}
+.home .tablet{
+    display: none;
+}
+.home .mobile{
+    display: none;
+}
+.portfolio .mobile{
+    display: none;
+}
+
+/*VERSÃO MOBILE*/
+@media screen and (max-width: 480px){    
+    @font-face {
+        font-family: 'PoppinsLight';
+        src: url('PoppinsLight.otf');
+    }
+    @font-face {
+        font-family: 'PoppinsRegular';
+        src: url('PoppinsRegular.otf');
+    }
+    @font-face {
+        font-family: 'PoppinsSemiBold';
+        src: url('PoppinsSemiBold.otf');
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+        overflow-x: hidden;
+    }
+    .header{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+        height: auto;
+        background-color: none;
+    }
+    .logo{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        height: 50px;
+        margin-top: -0.5vh;
+    }
+    .menu{
+        display: none;
+    }
+    .home .mobile{
+        display: flex;
+        position: static;
+        height: auto;
+        opacity: 8%;
+    }
+    .home{
+        display: flex;
+        align-items:center;
+        text-align: center;
+        justify-content: center;
+        background-color: none;
+    }
+    .textos{
+        display: block;
+        position: absolute;
+        margin-top: 15vh;
+        color: #e1e1e5; /*cor original #e1e1e5*/
+        top: 2vh;
+        height: auto;
+        padding: 0px;
+        background-color: none;
+    }
+    .texto1{
+        display: flex;
+        color: #ff7625;
+        font-size: 2vh;
+        justify-content: center;
+        font-family: 'PoppinsRegular';
+    }
+    .texto2{
+        display: flex;
+        color: #ffffff;
+        font-size: 2.6vh;
+        line-height: 1.35;
+        margin-top: -19px;
+        text-align: center;
+        font-family: 'PoppinsSemiBold';
+    }
+    .texto3{
+        display: flex;
+        color: #ffffff;
+        font-size: 2.6vh;
+        line-height: 1.35;
+        margin-top: -19px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-family: 'PoppinsSemiBold';
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .botao{
+        display: flex;
+        color: #ff7625;
+        padding: 11px;
+        margin-top: -10px;
+        font-size: 1.3vh;
+        font-family: 'PoppinsRegular';
+        letter-spacing: 2px;
+        border: 2px solid #ff7625;
+    }
+    #texto2{
+        display: flex;
+        margin-top: 2.5vh;
+    }
+    .portfolio .mobile{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: -0.2vh;
+        opacity: 10%;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 15px;
+        justify-items: center;
+        background-color: none;
+    }
+    iframe{
+        display: flex;
+        position: relative;
+        display: flex;
+        border: 1.5px solid black;
+        width: 250px;
+        height: 140px;
+    }
+    .whatsapp{
+        position: fixed;
+        top: 72%;
+        right: 3%;
+        padding: 10px;
+        z-index: 10000000;
+    }
+    .whatsapp img{
+        height: 40px;
+        width: 40px;
+    }
+    .home .pc{
+        display: none;
+    }
+    .home .tablet{
+        display: none;
+    }
+    .portfolio .pc{
+        display: none;
+    }
+}
+
+/*VERSÃO TABLET*/
+@media screen and (min-width: 481px) and (max-width: 1024px){
+    @font-face {
+        font-family: 'PoppinsLight';
+        src: url('PoppinsLight.otf');
+    }
+    @font-face {
+        font-family: 'PoppinsRegular';
+        src: url('PoppinsRegular.otf');
+    }
+    @font-face {
+        font-family: 'PoppinsSemiBold';
+        src: url('PoppinsSemiBold.otf');
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+        overflow-x: hidden;
+    }
+    .header{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .home .tablet{
+        display: flex;
+        position: static;
+        width: 100%;
+    }
+    .textos{
+        display: block;
+        float: left;
+        position: absolute;
+        margin-left: 3vw;
+        color: #e1e1e5; /*cor original #e1e1e5*/
+        width: max-content;
+        top: 10vw;
+        height: auto;
+        background-color: none;
+    }
+    .texto1{
+        display: flex;
+        color: #ff7625;
+        font-size: 13px;
+        font-family: 'PoppinsRegular';
+    }
+    .texto2, .texto3{
+        display: flex;
+        color: #ffffff;
+        font-size: 19px;
+        line-height: 1.35;
+        margin-top: -19px;
+        font-family: 'PoppinsSemiBold';
+    }
+    .botao{
+        display: flex;
+        color: #ff7625;
+        padding: 8px;
+        margin-top: -10px;
+        font-size: 11px;
+        font-family: 'PoppinsRegular';
+        letter-spacing: 2px;
+        border: 2px solid #ff7625;
+    }
+    #texto2{
+        display: flex;
+        margin-top: 13px;
+    }
+    a{
+        display: flex;
+        text-decoration: none;
+    }
+    .portfolio video{
+        display: flex;
+        width: 100%;
+        margin-top: -0.2vh;
+        opacity: 10%;
+    }
+    .container{
+        display: grid;
+        margin-top: -96vh;
+        grid-template-columns: repeat(2, 2fr);
+        justify-content: center;
+        align-items: stretch;
+        grid-row-gap: 20px;
+        justify-items: center;
+        background-color: none;
+    }
+    iframe{
+        display: flex;
+        position: relative;
+        display: flex;
+        border: 1.5px solid black;
+        width: 250px;
+        height: 140px;
+    }
+    .whatsapp{
+        position: fixed;
+        top: 72%;
+        right: 3%;
+        padding: 10px;
+        z-index: 10000000;
+    }
+    .whatsapp img{
+        height: 60px;
+        width: 60px;
+    }
+    .home .pc{
+        display: none;
+    }
+    .portfolio .mobile{
+        display: none;
+    }
+}
+
